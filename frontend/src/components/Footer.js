@@ -91,12 +91,7 @@ const Footer = () => {
               © 2024 Cyber Safety Awareness. All rights reserved.
             </p>
             <div className="flex space-x-6 mt-4 md:mt-0">
-              <a href="#" className="text-gray-400 hover:text-white text-sm transition-colors">
-                Privacy Policy
-              </a>
-              <a href="#" className="text-gray-400 hover:text-white text-sm transition-colors">
-                Terms of Service
-              </a>
+              
             </div>
           </div>
         </div>
