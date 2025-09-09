@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import ThreatRow from '../components/ThreatRow';
+
 import { threatsAPI } from '../services/api';
 
 const Home = () => {
@@ -22,29 +22,7 @@ const Home = () => {
     fetchThreats();
   }, []);
 
-  const features = [
-    {
-      icon: '🛡️',
-      title: 'Comprehensive Threat Database',
-      description: 'Access detailed information about various cyber threats including phishing, ransomware, and more.'
-    },
-    {
-      icon: '🔍',
-      title: 'Search & Filter',
-      description: 'Quickly find specific threats using our advanced search and filtering capabilities.'
-    },
-    {
-      icon: '📚',
-      title: 'Educational Content',
-      description: 'Learn prevention methods and recovery strategies for each type of cyber threat.'
-    },
-    {
-      icon: '💬',
-      title: 'Community Feedback',
-      description: 'Share your experiences and get help from our community of security experts.'
-    }
-  ];
-
+  
   const getSeverityColor = (severity) => {
     switch (severity) {
       case 'Critical': return 'bg-red-100 text-red-800';
